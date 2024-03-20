@@ -1,65 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P-Paribahan</title>
-    <!-- tailwindcss & daisyUI   -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> P-Ticket </title>
+  <!-- daisyUI & tailwindcss -->
+  
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
-<!-- Custom Color -->
-<script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
-        }
-      }
-    }
-  </script>
-
-<!-- Raleway google font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<style>
-  .font-Raleway: "Raleway", sans-serif;
-</style>
+<!-- Custom CSS-->
+<link rel="stylesheet" href="style.css">
 </head>
-<body class="font-Raleway">
-    <header>
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </div>
-                <ul tabindex="0" class="menu font-medium menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a> Home </a></li>
-                  <li><a> About </a></li>
-                  <li><a> Destination </a></li>
-                  <li><a> Search </a></li>
-                </ul>
-              </div>
-              <a class="btn btn-ghost text-2xl font-extrabold">P-Ticket</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a> Home </a></li>
-                <li><a> About </a></li>
-                <li><a> Destination </a></li>
-                <li><a> Search </a></li>
-              </ul>
-            </div>
-            <div class="navbar-end">
-                <a class="btn">Button
-                    <img src="images/bus-icon.png" alt="">   
-                </a>
-            </div>
-            
+<body>
+  <main class="w-1170 h-auto">
+    <!--  NavBar Started   -->
+    <div class="navbar bg-base-100 font-Raleway">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
           </div>
-    </header>
+        </div>
+        <a class="btn btn-ghost text-2xl font-extrabold">P-Ticket</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a> Home </a></li>
+          <li><a> About </a></li>
+          <li><a> Destination </a></li>
+          <li><a> Search </a></li> 
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn">Bus 
+          <img src="images/bus-icon.png" alt="">
+        </a>
+      </div>
+    </div>
+     <!--  NavBar End   -->
+     <!--  Hero Started  -->
+
+      <div class="hero min-h-screen">
+        <img class="hero min-h-screen" src="images/banner.png" alt="">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="">
+            <!--
+            <p class="text-6xl font-bold">End-to-End Travel with</p>
+            <P class="text-6xl font-bold">P Paribahan</p>         
+-->
+            <p class="text-6xl font-bold mb-5"> End-to-End Travel with </p>
+            <p class="text-6xl font-bold mb-5"> P Paribahan </p>
+            <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The <br>
+            integrated testing features allow for a streamlined.</p>
+            <button class="btn btn-primary">Get Started</button>
+          </div>
+        </div>
+      </div>
+      <!--  Hero Ended  -->
+      <!--  copupon part started -->
+      <div class="flex justify-center items-center">
+        <div > 
+          <p class="text-6xl font-bold"> Best offers for you</p>
+          <!--Divider horizontal-->
+          <div class="flex w-full">
+            <div class="grid h-20 flex-grow card bg-base-300 rounded-box place-items-center">
+              <h1> 15% OFF</h1>
+              <p>on your next purchase </p>
+              <p>use by January 2024 </p>
+            </div>
+            <div class=" divider-horizontal"></div>
+            <div class="grid h-20 flex-grow card bg-base-300 rounded-box place-items-center">
+              <div class="flex justify-between">
+                <div>
+                  <h1> 15% OFF</h1>
+                  <p>on your next purchase </p>
+                  <p>use by January 2024 </p>
+                </div>
+              </div>
+                  <h1> NEW15</h1>
+                  <p>Coupon Code</p>
+              </div>
+          </div>
+          <!--Divider horizontal ended-->
+          <button class="btn btn-outline btn-primary">See All Offers</button>
+      </div>
+      </div>
+
+      <!--  copupon part Ended -->
+      
+      <!-- footer started -->
+      <footer class="footer p-10 bg-base-white text-base-content">
+        <nav>
+          <h1 class="footer-title">P-Ticket</h1> 
+          <a class="link link-hover">P-Ticket is a digital platform to make your 
+            daily commuting better.</a>
+        </nav>  
+        <nav>
+          <h6 class="footer-title"> Download our app </h6>
+        </nav>
+      </footer> 
+      <footer class="footer px-10 py-4 border-t bg-base-white text-base-content border-base-300">
+        <aside class="items-center grid-flow-col">
+          <p>@all rights reserved, P-Ticket services limited.2024</p>
+        </aside> 
+        <nav class="md:place-self-center md:justify-self-end">
+          <div class="">
+            <nav class="grid grid-flow-col gap-4">
+              <a class="link link-hover">Terms & condition</a>
+              <a class="link link-hover">Return & refund policy</a>
+              <a class="link link-hover">Privacy policy</a>
+
+            </nav>
+          </div>
+        </nav>
+      </footer>
+      <!-- footer Ended -->
+  </main>
+  
 </body>
 </html>
