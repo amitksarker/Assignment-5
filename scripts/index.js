@@ -15,9 +15,10 @@
     hideElementById('home-section');
     showElementById('Success-section');
  }
+
 function sit1(elementId){
     hideColorById('A1');
-    showColorById('A1, I3');
+    showColorById('A1');
     
     
     
@@ -95,24 +96,22 @@ function sit1(elementId){
     showColorById('J4');
 
 }
+
 function sit2(elementId){
    hideColorById('A2');
-    showColorById('A2');
+   showColorById('A2');
 }
+
 function sit3(elementId){
    hideColorById('A3');
-    showColorById('A3');
+   showColorById('A3');
 }
+
 function sit4(elementId){
    hideColorById('A4');
    showColorById('A4');
 }
-function sit5(elementId)
-function sit6(elementId)
-function sit7(elementId)
-function sit8(elementId)
-function sit9(elementId)
-function sit10(elementId)
+
 
 
 
