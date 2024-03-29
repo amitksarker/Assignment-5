@@ -17,3 +17,10 @@ function showColorById(elementId){
     const element = document.getElementById(elementId);
     element.classList.remove('bg-[#F7F8F8]')
 }
+
+// added sit Number and price 
+
+function showSitInfoById(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.remove('hidden');
+}
